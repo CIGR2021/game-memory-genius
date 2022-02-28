@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(71, 70, 68, 0.651);
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order:inherit;
+}
+
+header {
+  position: absolute;
+  top: 150px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #616161;
+  text-shadow: #e0e0e0 1px 1px 0;
+}
+
+footer {
+  position: absolute;
+  top: 715px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #616161;
+  text-shadow: #e0e0e0 1px 1px 0;
+}
+
+.game {
+  position: relative;
+  display: grid;
+  grid-template-areas: 'one two three four' 'five six seven eight';
+  grid-gap: 1%;
+  /* background-color: black; */
+  /* border-radius: 100%; */
+  width: 480px;
+  height: 480px;
+}
+
+.one {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: one;
+  background-color: green;
+  border-top-left-radius: 100%;
+}
+
+.two {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: two;
+  background-color: red;
+  /* border-top-right-radius: 100%; */
+}
+
+.three {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: three;
+  background-color: orange;
+  /* border-bottom-left-radius: 100%; */
+}
+
+.four {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: four;
+  background-color: blue;
+  border-top-right-radius: 100%;
+}
+
+.five {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: five;
+  background-color: rgb(10, 70, 150);
+  border-bottom-left-radius: 100%;
+}
+
+.six {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: six;
+  background-color: rgb(218, 221, 15);
+  /* border-bottom-right-radius: 100%; */
+}
+
+.seven {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: seven;
+  background-color: rgb(21, 92, 21);
+  /* border-bottom-right-radius: 100%; */
+}
+
+.eight {
+  opacity: 0.8;
+  cursor: pointer;
+  grid-area: eight;
+  background-color: rgb(143, 30, 30);
+  border-bottom-right-radius: 100%;
+}
+
+.selected {
+  opacity: 1;
+  /* -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+}
